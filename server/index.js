@@ -7,6 +7,8 @@ app.listen(PORT, () => {
   console.log(`server start on ${5000}`);
 });
 */
+
+//server
 require('dotenv').config();
 const express = require('express');
 const sequelize = require('./db');
