@@ -1,7 +1,7 @@
 // опишем здесь модели данных
 const sequelize = require('../db'); //импорт обьекта sequelize из файла db.js
 const { DataTypes } = require('sequelize'); //импорт класс ДАТАТАЙП из библиотеки sequelize
-//создаем модель пользователя и все модели
+//создаем все модели
 const User = sequelize.define('user', {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   email: { type: DataTypes.STRING, unique: true },
